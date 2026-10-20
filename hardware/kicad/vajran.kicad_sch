@@ -1650,6 +1650,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "Courier New")
 					(size 1.27 1.27)
 				)
 				(justify left bottom)
@@ -1670,6 +1671,52 @@
 			(project "vajran"
 				(path "/7388b7ed-711f-4089-9af6-82932916e4d0"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 174.498 55.626)
+		(size 80.772 38.608)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "75fa3395-4ac0-474c-8224-69e84041cd72")
+		(property "Sheetname" "COMMUNICATION"
+			(at 174.498 54.9144 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "COMM.kicad_sch"
+			(at 174.498 94.8186 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "vajran"
+				(path "/7388b7ed-711f-4089-9af6-82932916e4d0"
+					(page "3")
 				)
 			)
 		)

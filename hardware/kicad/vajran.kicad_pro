@@ -852,7 +852,7 @@
         "uuid": "7388b7ed-711f-4089-9af6-82932916e4d0"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R9-14,IC4,C15-17,#PWR15,#PWR18-24,D4",
     "variants": []
   },
   "sheets": [
@@ -863,6 +863,10 @@
     [
       "444d2eb6-ccd5-433a-a986-b723a3d05bf4",
       "PDU"
+    ],
+    [
+      "75fa3395-4ac0-474c-8224-69e84041cd72",
+      "COMMUNICATION"
     ]
   ],
   "text_variables": {},
