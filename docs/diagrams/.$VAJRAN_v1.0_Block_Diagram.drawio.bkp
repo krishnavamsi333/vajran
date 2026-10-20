@@ -1,0 +1,396 @@
+<mxfile host="app.diagrams.net" agent="Claude" type="device">
+
+  <!-- ============ PAGE 1 : SYSTEM OVERVIEW ============ -->
+  <diagram id="overview" name="0 · System Overview">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="ov_title" value="VAJRAN v1.0 — Industrial Robotics Controller&lt;br&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;System Overview — click any block to open its detail page&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#1F2933;" vertex="1" parent="1"><mxGeometry x="40" y="20" width="1080" height="70" as="geometry"/></mxCell>
+
+        <mxCell id="ov_pwrin" value="24V DC POWER INPUT&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Field supply / PSU&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="60" y="150" width="180" height="55" as="geometry"/></mxCell>
+
+        <object label="1 · POWER&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Protection · Regulation&lt;br&gt;Monitoring&lt;/font&gt;" link="data:page/id,power" id="ov_pwr">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#D79B00;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="60" y="250" width="180" height="80" as="geometry"/></mxCell>
+        </object>
+
+        <object label="7 · USER INTERFACE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;LEDs · Buttons · Display Hdr&lt;/font&gt;" link="data:page/id,ui" id="ov_ui">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE1F5;strokeColor=#B85DA0;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="60" y="430" width="180" height="70" as="geometry"/></mxCell>
+        </object>
+
+        <object label="2 · MCU CORE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;STM32 · Clock · Reset&lt;br&gt;Watchdog · SWD Debug&lt;/font&gt;" link="data:page/id,mcu" id="ov_mcu">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;fontStyle=1" vertex="1" parent="1"><mxGeometry x="350" y="235" width="230" height="110" as="geometry"/></mxCell>
+        </object>
+
+        <object label="6 · MEMORY / STORAGE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;SPI Flash · EEPROM · microSD&lt;/font&gt;" link="data:page/id,memory" id="ov_mem">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#666666;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="350" y="430" width="230" height="70" as="geometry"/></mxCell>
+        </object>
+
+        <object label="3 · COMMUNICATION&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;2× CAN-FD · Ethernet&lt;br&gt;RS-485 · USB-C&lt;/font&gt;" link="data:page/id,comm" id="ov_comm">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="680" y="120" width="210" height="75" as="geometry"/></mxCell>
+        </object>
+
+        <object label="4 · MOTION INTERFACE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;4× Encoder A/B/Z&lt;br&gt;PWM / DIR / ENABLE&lt;/font&gt;" link="data:page/id,motion" id="ov_motion">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="680" y="220" width="210" height="75" as="geometry"/></mxCell>
+        </object>
+
+        <object label="5 · INDUSTRIAL I/O&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;24V DIN · MOSFET DOUT&lt;br&gt;0–10V Analog IN&lt;/font&gt;" link="data:page/id,io" id="ov_io">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="680" y="320" width="210" height="75" as="geometry"/></mxCell>
+        </object>
+
+        <object label="8 · SENSORS&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;IMU · Temp · Current · Voltage&lt;/font&gt;" link="data:page/id,sensors" id="ov_sens">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="680" y="420" width="210" height="75" as="geometry"/></mxCell>
+        </object>
+
+        <object label="ROBOT /&lt;br&gt;INDUSTRIAL&lt;br&gt;SYSTEM&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Drives, actuators,&lt;br&gt;field sensors, HMI,&lt;br&gt;host PC / PLC&lt;br&gt;&lt;br&gt;(click for&lt;br&gt;connector map)&lt;/font&gt;" link="data:page/id,connectors" id="ov_robot">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#000000;fontColor=#FFFFFF;fontSize=14;fontStyle=1" vertex="1" parent="1"><mxGeometry x="960" y="120" width="150" height="375" as="geometry"/></mxCell>
+        </object>
+
+        <mxCell id="ov_note" value="&lt;b&gt;How to use this file&lt;/b&gt;&lt;br&gt;• Each coloured block above is a hyperlink — click it to jump to that subsystem's detail page.&lt;br&gt;• Every detail page has a &lt;b&gt;◀ Back to Overview&lt;/b&gt; button in the top-left corner.&lt;br&gt;• Page tabs at the bottom of the draw.io window let you move between sheets directly.&lt;br&gt;• Solid arrows = signal / data flow.  Dashed orange arrows = power rails.  Double arrows = bidirectional." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=6;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="60" y="560" width="830" height="110" as="geometry"/></mxCell>
+
+        <mxCell id="ov_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;" edge="1" parent="1" source="ov_pwrin" target="ov_pwr"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e2" value="12V / 5V / 3V3 rails" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;strokeWidth=2;strokeColor=#D79B00;fontSize=10;" edge="1" parent="1" source="ov_pwr" target="ov_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="ov_mcu" target="ov_comm"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="ov_mcu" target="ov_motion"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="ov_mcu" target="ov_io"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="ov_mcu" target="ov_sens"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="ov_mcu" target="ov_mem"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;startArrow=classic;startFill=1;" edge="1" parent="1" source="ov_mcu" target="ov_ui"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;startArrow=classic;startFill=1;" edge="1" parent="1" source="ov_comm" target="ov_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;startArrow=classic;startFill=1;" edge="1" parent="1" source="ov_motion" target="ov_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ov_e11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;startArrow=classic;startFill=1;" edge="1" parent="1" source="ov_io" target="ov_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 2 : POWER ============ -->
+  <diagram id="power" name="1 · Power">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="pw_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="pw_title" value="1 · POWER — Protection · Regulation · Monitoring" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#8A5A00;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <mxCell id="pw_h1" value="INPUT PROTECTION CHAIN" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#8A5A00;" vertex="1" parent="1"><mxGeometry x="60" y="110" width="300" height="20" as="geometry"/></mxCell>
+        <mxCell id="pw_j1" value="J1 — 24V DC IN&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;18–36V range&lt;br&gt;+24V / GND / PE&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="60" y="140" width="150" height="70" as="geometry"/></mxCell>
+        <mxCell id="pw_fuse" value="FUSE / eFUSE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Overcurrent limit&lt;br&gt;Inrush control&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="250" y="140" width="150" height="70" as="geometry"/></mxCell>
+        <mxCell id="pw_rev" value="REVERSE POLARITY&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;P-channel MOSFET&lt;br&gt;(low drop vs diode)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="440" y="140" width="160" height="70" as="geometry"/></mxCell>
+        <mxCell id="pw_tvs" value="TVS / SURGE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Bidirectional TVS&lt;br&gt;Load-dump clamp&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="640" y="140" width="150" height="70" as="geometry"/></mxCell>
+        <mxCell id="pw_filt" value="BULK + EMI FILTER&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Electrolytic bulk&lt;br&gt;Common-mode choke&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=11;" vertex="1" parent="1"><mxGeometry x="830" y="140" width="160" height="70" as="geometry"/></mxCell>
+
+        <mxCell id="pw_h2" value="REGULATION STAGE" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#8A5A00;" vertex="1" parent="1"><mxGeometry x="60" y="255" width="300" height="20" as="geometry"/></mxCell>
+        <mxCell id="pw_b12" value="24V → 12V&lt;br&gt;Synchronous Buck&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;~2A · aux / fans&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#D79B00;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="250" y="285" width="180" height="75" as="geometry"/></mxCell>
+        <mxCell id="pw_b5" value="24V → 5V&lt;br&gt;Synchronous Buck&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;~3A · main logic feed&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#D79B00;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="470" y="285" width="180" height="75" as="geometry"/></mxCell>
+        <mxCell id="pw_b33" value="5V → 3.3V&lt;br&gt;LDO or Buck&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;~1.5A · low-noise&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#D79B00;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="690" y="285" width="180" height="75" as="geometry"/></mxCell>
+
+        <mxCell id="pw_h3" value="RAIL DISTRIBUTION" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#8A5A00;" vertex="1" parent="1"><mxGeometry x="60" y="400" width="300" height="20" as="geometry"/></mxCell>
+        <mxCell id="pw_r12" value="12V RAIL&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Fans · relay coils&lt;br&gt;Aux expansion&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="250" y="430" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="pw_r5" value="5V RAIL&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Encoders · CAN · RS-485&lt;br&gt;Display header&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="470" y="430" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="pw_r33" value="3V3 RAIL&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;MCU · ETH PHY · IMU&lt;br&gt;Flash · EEPROM · SD&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="690" y="430" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="pw_r33a" value="3V3_A (ANALOG)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Ferrite bead + bulk&lt;br&gt;VDDA / VREF+&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;dashed=1;" vertex="1" parent="1"><mxGeometry x="910" y="430" width="160" height="70" as="geometry"/></mxCell>
+
+        <mxCell id="pw_mon" value="&lt;b&gt;POWER MONITORING → MCU ADC&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Vin sense: resistor divider (24V → &lt;3.3V) + RC filter&lt;br&gt;• Logic rail sense: 5V and 3V3 dividers&lt;br&gt;• Input current: shunt + current-sense amp (INA-class)&lt;br&gt;• PGOOD / fault flags from each regulator → GPIO&lt;br&gt;• Brown-out and undervoltage lockout thresholds in firmware" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="60" y="550" width="430" height="170" as="geometry"/></mxCell>
+
+        <mxCell id="pw_notes" value="&lt;b&gt;DESIGN NOTES&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Keep switching-node copper small; place input caps tight to the buck IC.&lt;br&gt;• Separate PGND / AGND, single-point star tie under the MCU.&lt;br&gt;• Size TVS for load dump and inductive surge from motor supply.&lt;br&gt;• Add ferrite + LC pi filter into 3V3_A for clean ADC reference.&lt;br&gt;• Reserve test points on every rail (24V, 12V, 5V, 3V3, 3V3_A, GND).&lt;br&gt;• Thermal: 24V→5V buck is the hot spot — give it copper pour + vias." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="520" y="550" width="550" height="170" as="geometry"/></mxCell>
+
+        <mxCell id="pw_ed1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;" edge="1" parent="1" source="pw_j1" target="pw_fuse"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;" edge="1" parent="1" source="pw_fuse" target="pw_rev"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;" edge="1" parent="1" source="pw_rev" target="pw_tvs"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;" edge="1" parent="1" source="pw_tvs" target="pw_filt"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed5" value="24V_PROT" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;fontSize=10;" edge="1" parent="1" source="pw_filt" target="pw_b12"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;" edge="1" parent="1" source="pw_filt" target="pw_b5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D79B00;" edge="1" parent="1" source="pw_b5" target="pw_b33"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D6B656;" edge="1" parent="1" source="pw_b12" target="pw_r12"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D6B656;" edge="1" parent="1" source="pw_b5" target="pw_r5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;strokeColor=#D6B656;" edge="1" parent="1" source="pw_b33" target="pw_r33"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="pw_ed11" value="ferrite" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;strokeColor=#D6B656;fontSize=10;" edge="1" parent="1" source="pw_r33" target="pw_r33a"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 3 : MCU CORE ============ -->
+  <diagram id="mcu" name="2 · MCU Core">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="mc_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="mc_title" value="2 · MCU CORE — STM32 Main Controller" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#2A4A7A;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <mxCell id="mc_mcu" value="STM32 MCU&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Main Controller&lt;br&gt;&lt;br&gt;Cortex-M4F / M7 class&lt;br&gt;LQFP/BGA 100–176 pin&lt;br&gt;&lt;br&gt;Needs: 2× FDCAN, ETH MAC,&lt;br&gt;USB, ≥4 TIM in encoder mode,&lt;br&gt;multi-ch ADC, SDMMC, QSPI&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=16;fontStyle=1" vertex="1" parent="1"><mxGeometry x="430" y="250" width="280" height="220" as="geometry"/></mxCell>
+
+        <mxCell id="mc_clk" value="CLOCK&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;HSE crystal 8 / 25 MHz&lt;br&gt;(25 MHz if PHY shares it)&lt;br&gt;LSE 32.768 kHz → RTC&lt;br&gt;Load caps per crystal spec&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#6C8EBF;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="110" y="180" width="230" height="90" as="geometry"/></mxCell>
+        <mxCell id="mc_rst" value="RESET / WATCHDOG&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Voltage supervisor (POR/BOR)&lt;br&gt;RC + ESD on NRST&lt;br&gt;Internal IWDG + WWDG&lt;br&gt;Optional external WDT&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#6C8EBF;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="110" y="300" width="230" height="90" as="geometry"/></mxCell>
+        <mxCell id="mc_boot" value="BOOT CONFIG&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;BOOT0 pull-down + jumper&lt;br&gt;DFU / bootloader entry&lt;br&gt;Firmware update over USB/CAN&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#6C8EBF;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="110" y="420" width="230" height="90" as="geometry"/></mxCell>
+
+        <mxCell id="mc_swd" value="SWD DEBUG&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;SWDIO / SWCLK / NRST&lt;br&gt;SWO trace (optional)&lt;br&gt;10-pin 1.27mm or Tag-Connect&lt;br&gt;3V3 + GND reference&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#6C8EBF;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="800" y="180" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="mc_dec" value="SUPPLY &amp; DECOUPLING&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;100nF per VDD pin, close-in&lt;br&gt;4.7–10µF bulk per bank&lt;br&gt;VDDA via ferrite from 3V3_A&lt;br&gt;VREF+ with 1µF + 100nF&lt;br&gt;VBAT to RTC coin cell / 3V3&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#6C8EBF;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="800" y="300" width="240" height="105" as="geometry"/></mxCell>
+
+        <mxCell id="mc_map" value="&lt;b&gt;PERIPHERAL ALLOCATION MAP&lt;/b&gt;&lt;br&gt;&lt;br&gt;FDCAN1, FDCAN2&lt;font style=&quot;font-size:10px&quot;&gt; → CAN-FD ports&lt;/font&gt;&lt;br&gt;ETH (RMII)&lt;font style=&quot;font-size:10px&quot;&gt; → 10/100 PHY&lt;/font&gt;&lt;br&gt;USART/UART&lt;font style=&quot;font-size:10px&quot;&gt; → RS-485 (+DE/RE)&lt;/font&gt;&lt;br&gt;USB_OTG_FS&lt;font style=&quot;font-size:10px&quot;&gt; → USB-C&lt;/font&gt;&lt;br&gt;TIM1–TIM5&lt;font style=&quot;font-size:10px&quot;&gt; → 4× encoder + PWM&lt;/font&gt;&lt;br&gt;ADC1/ADC2&lt;font style=&quot;font-size:10px&quot;&gt; → analog in, current, temp, rails&lt;/font&gt;&lt;br&gt;SPI + QSPI&lt;font style=&quot;font-size:10px&quot;&gt; → IMU, external flash&lt;/font&gt;&lt;br&gt;I²C&lt;font style=&quot;font-size:10px&quot;&gt; → EEPROM, temp sensors, display&lt;/font&gt;&lt;br&gt;SDMMC&lt;font style=&quot;font-size:10px&quot;&gt; → microSD 4-bit&lt;/font&gt;&lt;br&gt;GPIO/EXTI&lt;font style=&quot;font-size:10px&quot;&gt; → DIN, DOUT, LEDs, buttons, faults&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=12;" vertex="1" parent="1"><mxGeometry x="430" y="520" width="330" height="235" as="geometry"/></mxCell>
+
+        <mxCell id="mc_note" value="&lt;b&gt;NOTES&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Pick the package only after the pin map is proven — encoder timers and FDCAN pins collide easily.&lt;br&gt;• Keep crystal traces short, guard-ringed, ground island under the crystal, no fast signals nearby.&lt;br&gt;• NRST must be reachable from the debug header and the front-panel reset button.&lt;br&gt;• Reserve 2 spare GPIO + 1 spare UART for bring-up and field debug.&lt;br&gt;• DMA plan matters: encoders + ADC + Ethernet all want bandwidth." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="790" y="520" width="330" height="235" as="geometry"/></mxCell>
+
+        <mxCell id="mc_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="mc_clk" target="mc_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mc_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="mc_rst" target="mc_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mc_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" edge="1" parent="1" source="mc_boot" target="mc_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mc_e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;startArrow=classic;startFill=1;" edge="1" parent="1" source="mc_mcu" target="mc_swd"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mc_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;dashed=1;strokeColor=#D79B00;" edge="1" parent="1" source="mc_dec" target="mc_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 4 : COMMUNICATION ============ -->
+  <diagram id="comm" name="3 · Communication">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="cm_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="cm_title" value="3 · COMMUNICATION — CAN-FD · Ethernet · RS-485 · USB-C" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#3A6B2A;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <object label="STM32&lt;br&gt;MCU&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;(page 2)&lt;/font&gt;" link="data:page/id,mcu" id="cm_mcu"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="50" y="230" width="110" height="320" as="geometry"/></mxCell></object>
+
+        <mxCell id="cm_c1t" value="CAN-FD #1 Transceiver&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;3V3 I/O · 5 Mbps data phase&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="230" y="130" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_c1p" value="CMC + TVS + Split Term&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;120Ω jumper-selectable&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="470" y="130" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_c1j" value="J2 · CAN1&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;CANH/CANL/GND&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDFAEC;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="710" y="130" width="150" height="55" as="geometry"/></mxCell>
+
+        <mxCell id="cm_c2t" value="CAN-FD #2 Transceiver&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Independent bus / redundancy&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="230" y="215" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_c2p" value="CMC + TVS + Split Term" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="470" y="215" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_c2j" value="J3 · CAN2&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;CANH/CANL/GND&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDFAEC;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="710" y="215" width="150" height="55" as="geometry"/></mxCell>
+
+        <mxCell id="cm_ephy" value="Ethernet PHY (RMII)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;10/100 · MDIO mgmt · 50MHz REF_CLK&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="230" y="300" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_emag" value="Magnetics + Bob Smith&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Isolation transformer, 75Ω/1nF&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="470" y="300" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_erj" value="J4 · RJ45&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Link/Act LEDs, shielded&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDFAEC;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="710" y="300" width="150" height="55" as="geometry"/></mxCell>
+
+        <mxCell id="cm_rst" value="RS-485 Transceiver&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Half-duplex · DE/RE from GPIO&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="230" y="385" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_rsp" value="CMC + TVS + Bias/Term&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;120Ω + fail-safe bias&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="470" y="385" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_rsj" value="J5 · RS-485&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;A / B / GND&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDFAEC;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="710" y="385" width="150" height="55" as="geometry"/></mxCell>
+
+        <mxCell id="cm_usbe" value="USB 2.0 ESD Array&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Low-cap ESD on D+/D-/CC&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="230" y="470" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_usbc" value="USB-C Receptacle&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;2× 5.1kΩ CC pull-downs (sink)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="470" y="470" width="200" height="55" as="geometry"/></mxCell>
+        <mxCell id="cm_usbj" value="J6 · USB-C&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Config / firmware / logs&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDFAEC;strokeColor=#82B366;fontSize=11;" vertex="1" parent="1"><mxGeometry x="710" y="470" width="150" height="55" as="geometry"/></mxCell>
+
+        <object label="ROBOT /&lt;br&gt;HOST&lt;br&gt;PLC&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;(connector&lt;br&gt;map)&lt;/font&gt;" link="data:page/id,connectors" id="cm_robot"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#000000;fontColor=#FFFFFF;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="920" y="130" width="130" height="395" as="geometry"/></mxCell></object>
+
+        <mxCell id="cm_note" value="&lt;b&gt;NOTES&lt;/b&gt;&#160; • Route CAN, RS-485 and Ethernet pairs as differential, length-matched, over a continuous ground plane. &#160;• Keep termination jumpers accessible from outside the enclosure. &#160;• Chassis/PE stitched to signal ground through the standard cap+resistor at one point only. &#160;• Decide early whether CAN/RS-485 need galvanic isolation — it changes the power tree (isolated DC-DC per port).&#160; • USB is a service port: no field wiring assumptions." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="50" y="590" width="1000" height="110" as="geometry"/></mxCell>
+
+        <mxCell id="cm_e1" value="FDCAN1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" edge="1" parent="1" source="cm_mcu" target="cm_c1t"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e2" value="FDCAN2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" edge="1" parent="1" source="cm_mcu" target="cm_c2t"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e3" value="RMII+MDIO" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" edge="1" parent="1" source="cm_mcu" target="cm_ephy"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e4" value="UART+DE" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" edge="1" parent="1" source="cm_mcu" target="cm_rst"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e5" value="USB D+/D-" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" edge="1" parent="1" source="cm_mcu" target="cm_usbe"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_c1t" target="cm_c1p"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_c1p" target="cm_c1j"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_c2t" target="cm_c2p"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_c2p" target="cm_c2j"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_ephy" target="cm_emag"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_emag" target="cm_erj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_rst" target="cm_rsp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_rsp" target="cm_rsj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_usbe" target="cm_usbc"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_usbc" target="cm_usbj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e16" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_c1j" target="cm_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_c2j" target="cm_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_erj" target="cm_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="cm_rsj" target="cm_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="cm_e20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;dashed=1;" edge="1" parent="1" source="cm_usbj" target="cm_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 5 : MOTION ============ -->
+  <diagram id="motion" name="4 · Motion Interface">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="mo_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="mo_title" value="4 · MOTION / MOTOR INTERFACE — 4× Encoder + Drive Signals" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#6B4A80;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <object label="STM32&lt;br&gt;MCU&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;TIM1–TIM5&lt;/font&gt;" link="data:page/id,mcu" id="mo_mcu"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="50" y="150" width="110" height="420" as="geometry"/></mxCell></object>
+
+        <mxCell id="mo_hdr1" value="ENCODER FEEDBACK PATH  (identical × 4 channels)" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#6B4A80;" vertex="1" parent="1"><mxGeometry x="220" y="105" width="500" height="20" as="geometry"/></mxCell>
+
+        <mxCell id="mo_e1r" value="ENC #1 — RS-422 line receiver&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;A/Ā · B/B̄ · Z/Z̄  (or 5V single-ended buffer)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="220" y="135" width="270" height="55" as="geometry"/></mxCell>
+        <mxCell id="mo_e2r" value="ENC #2 — RS-422 line receiver&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;A/Ā · B/B̄ · Z/Z̄&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="220" y="205" width="270" height="55" as="geometry"/></mxCell>
+        <mxCell id="mo_e3r" value="ENC #3 — RS-422 line receiver&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;A/Ā · B/B̄ · Z/Z̄&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="220" y="275" width="270" height="55" as="geometry"/></mxCell>
+        <mxCell id="mo_e4r" value="ENC #4 — RS-422 line receiver&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;A/Ā · B/B̄ · Z/Z̄&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;" vertex="1" parent="1"><mxGeometry x="220" y="345" width="270" height="55" as="geometry"/></mxCell>
+
+        <mxCell id="mo_filt" value="SIGNAL CONDITIONING&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;RC low-pass + Schmitt buffer&lt;br&gt;120Ω differential termination&lt;br&gt;ESD / TVS on every line&lt;br&gt;5V→3V3 level translation&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE3F2;strokeColor=#9673A6;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="530" y="205" width="210" height="125" as="geometry"/></mxCell>
+
+        <mxCell id="mo_ej" value="J7–J10 · ENCODER PORTS&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;A/Ā B/B̄ Z/Z̄ + 5V_ENC + GND&lt;br&gt;Shield to chassis&lt;br&gt;Per-port 5V fused / current-limited&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5EEF8;strokeColor=#9673A6;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="780" y="205" width="220" height="125" as="geometry"/></mxCell>
+
+        <mxCell id="mo_hdr2" value="DRIVE OUTPUT PATH" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#6B4A80;" vertex="1" parent="1"><mxGeometry x="220" y="425" width="500" height="20" as="geometry"/></mxCell>
+        <mxCell id="mo_pwm" value="MOTOR CONTROL SIGNALS&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;4× PWM / DIR / ENABLE&lt;br&gt;from TIM compare channels&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="220" y="455" width="270" height="75" as="geometry"/></mxCell>
+        <mxCell id="mo_buf" value="BUFFER / ISOLATION&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Line driver or digital isolator&lt;br&gt;Series R + ESD&lt;br&gt;Safe default state on reset&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE3F2;strokeColor=#9673A6;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="530" y="455" width="210" height="75" as="geometry"/></mxCell>
+        <mxCell id="mo_dj" value="J11 · DRIVE HEADER&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;To servo / stepper drives&lt;br&gt;+ FAULT / READY inputs&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5EEF8;strokeColor=#9673A6;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="780" y="455" width="220" height="75" as="geometry"/></mxCell>
+
+        <mxCell id="mo_note" value="&lt;b&gt;SAFETY &amp; DESIGN NOTES&lt;/b&gt;&lt;br&gt;&lt;br&gt;• ENABLE lines must default to the de-energised state during reset, brown-out and firmware update — pull-downs at the driver, not just in software.&lt;br&gt;• If the machine needs a rated safety function (E-stop / STO), that path is a separate hardwired circuit, independent of the MCU. This board provides status only.&lt;br&gt;• Encoder cables are the most common noise entry point: twisted pairs, shielded, shield grounded at the controller end.&lt;br&gt;• Keep PWM traces away from encoder inputs and analog sections; separate connector zones on the PCB.&lt;br&gt;• Budget the 5V encoder supply — 4 encoders can easily draw more than the buck's headroom." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="50" y="600" width="950" height="160" as="geometry"/></mxCell>
+
+        <mxCell id="mo_x1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_mcu" target="mo_e1r"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_mcu" target="mo_e2r"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_mcu" target="mo_e3r"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_mcu" target="mo_e4r"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_e1r" target="mo_filt"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_e2r" target="mo_filt"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_e3r" target="mo_filt"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_e4r" target="mo_filt"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="mo_filt" target="mo_ej"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_mcu" target="mo_pwm"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="mo_pwm" target="mo_buf"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="mo_x12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="mo_buf" target="mo_dj"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 6 : INDUSTRIAL I/O ============ -->
+  <diagram id="io" name="5 · Industrial I/O">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="io_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="io_title" value="5 · INDUSTRIAL I/O — 24V Inputs · Protected Outputs · Analog In" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#0E6B70;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <object label="STM32&lt;br&gt;MCU" link="data:page/id,mcu" id="io_mcu"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;fontStyle=1" vertex="1" parent="1"><mxGeometry x="50" y="150" width="110" height="380" as="geometry"/></mxCell></object>
+
+        <mxCell id="io_h1" value="DIGITAL INPUTS  (field → controller)" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#0E6B70;" vertex="1" parent="1"><mxGeometry x="220" y="115" width="500" height="20" as="geometry"/></mxCell>
+        <mxCell id="io_dj" value="J12 · DIGITAL IN&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;8–16 ch, 24V sourcing&lt;br&gt;Limit switches, prox, home&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F5F6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="220" y="145" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="io_dp" value="INPUT PROTECTION&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Series R + TVS clamp&lt;br&gt;RC debounce filter&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="440" y="145" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="io_do" value="LEVEL / ISOLATION&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Optocoupler or comparator&lt;br&gt;IEC 61131-2 Type 1 thresholds&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="660" y="145" width="200" height="70" as="geometry"/></mxCell>
+        <mxCell id="io_dg" value="GPIO / EXTI&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Interrupt-capable pins&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="900" y="145" width="150" height="70" as="geometry"/></mxCell>
+
+        <mxCell id="io_h2" value="DIGITAL OUTPUTS  (controller → field)" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#0E6B70;" vertex="1" parent="1"><mxGeometry x="220" y="250" width="500" height="20" as="geometry"/></mxCell>
+        <mxCell id="io_og" value="GPIO / PWM&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;+ diagnostic feedback in&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="220" y="280" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="io_od" value="GATE DRIVE / LEVEL SHIFT&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;3V3 → 24V control&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="440" y="280" width="180" height="70" as="geometry"/></mxCell>
+        <mxCell id="io_om" value="PROTECTED HIGH-SIDE SWITCH&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Smart MOSFET: current limit,&lt;br&gt;thermal shutdown, open-load&lt;br&gt;Freewheel diode + TVS&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="660" y="280" width="200" height="70" as="geometry"/></mxCell>
+        <mxCell id="io_oj" value="J13 · DIGITAL OUT&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;8 ch · 24V · valves, relays,&lt;br&gt;indicators, brakes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F5F6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="900" y="280" width="150" height="70" as="geometry"/></mxCell>
+
+        <mxCell id="io_h3" value="ANALOG INPUTS" style="text;html=1;align=left;fontSize=12;fontStyle=1;fontColor=#0E6B70;" vertex="1" parent="1"><mxGeometry x="220" y="385" width="500" height="20" as="geometry"/></mxCell>
+        <mxCell id="io_aj" value="J14 · ANALOG IN&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;4–8 ch · 0–10V&lt;br&gt;(4–20mA via 250Ω option)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F5F6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="220" y="415" width="180" height="75" as="geometry"/></mxCell>
+        <mxCell id="io_ad" value="SCALE + CLAMP&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Divider 0–10V → 0–3V&lt;br&gt;Schottky clamp to rails&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="440" y="415" width="180" height="75" as="geometry"/></mxCell>
+        <mxCell id="io_ab" value="RC FILTER + OP-AMP BUFFER&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Anti-alias, low output Z&lt;br&gt;for ADC sample-and-hold&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=11;" vertex="1" parent="1"><mxGeometry x="660" y="415" width="200" height="75" as="geometry"/></mxCell>
+        <mxCell id="io_aa" value="ADC + DMA&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;VREF+ from 3V3_A&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=11;" vertex="1" parent="1"><mxGeometry x="900" y="415" width="150" height="75" as="geometry"/></mxCell>
+
+        <mxCell id="io_note" value="&lt;b&gt;NOTES&lt;/b&gt;&#160; • Decide isolated vs non-isolated I/O up front: isolation needs an isolated 24V field supply and a separate FIELD_GND plane region. &#160;• Every output needs a defined power-on state; add a common output-disable that firmware cannot override alone. &#160;• Bring smart-switch fault flags back to GPIO so a shorted valve is diagnosable in the field. &#160;• Keep the analog connector zone physically away from PWM and switching regulators; route AGND as a quiet region tied at one point. &#160;• Label channels on the silkscreen — field techs will thank you." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="50" y="570" width="1000" height="140" as="geometry"/></mxCell>
+
+        <mxCell id="io_x1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_dj" target="io_dp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_dp" target="io_do"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_do" target="io_dg"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_mcu" target="io_dj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_og" target="io_od"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_od" target="io_om"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_om" target="io_oj"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_mcu" target="io_og"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_aj" target="io_ad"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_ad" target="io_ab"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_ab" target="io_aa"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="io_x12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="io_mcu" target="io_aj"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 7 : SENSORS ============ -->
+  <diagram id="sensors" name="6 · Sensors">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="se_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="se_title" value="6 · ON-BOARD SENSORS — IMU · Temperature · Current · Voltage" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#8A7000;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <object label="STM32 MCU" link="data:page/id,mcu" id="se_mcu"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=14;fontStyle=1" vertex="1" parent="1"><mxGeometry x="480" y="330" width="200" height="120" as="geometry"/></mxCell></object>
+
+        <mxCell id="se_imu" value="6-AXIS IMU&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Accelerometer + Gyroscope&lt;br&gt;SPI (preferred) or I²C&lt;br&gt;INT1 → EXTI for data-ready&lt;br&gt;Mount near board centre, flat&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="120" y="150" width="240" height="110" as="geometry"/></mxCell>
+        <mxCell id="se_tmp" value="TEMPERATURE&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Digital I²C sensor (board ambient)&lt;br&gt;NTC near power stage → ADC&lt;br&gt;MCU internal temp channel&lt;br&gt;Over-temp derate / shutdown&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="120" y="520" width="240" height="110" as="geometry"/></mxCell>
+        <mxCell id="se_cur" value="CURRENT SENSING&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Shunt + current-sense amplifier&lt;br&gt;or Hall-effect sensor&lt;br&gt;Input current + per-rail option&lt;br&gt;Kelvin connection to shunt&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="800" y="150" width="240" height="110" as="geometry"/></mxCell>
+        <mxCell id="se_vol" value="VOLTAGE SENSING&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Dividers on 24V / 12V / 5V / 3V3&lt;br&gt;RC filter into ADC&lt;br&gt;Undervoltage &amp; brown-out flags&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="800" y="520" width="240" height="110" as="geometry"/></mxCell>
+
+        <mxCell id="se_note" value="&lt;b&gt;WHY EACH ONE EARNS ITS PLACE&lt;/b&gt;&#160;&#160;IMU → tilt, vibration signature, crash/impact detection on the robot frame. &#160;Temperature → thermal protection and predictive maintenance. &#160;Current → detect stalled actuators, seized joints, and wiring faults before damage. &#160;Voltage → distinguish a real fault from a sagging supply during fault post-mortems. &#160;&lt;br&gt;&lt;b&gt;LAYOUT&lt;/b&gt;&#160;&#160;Analog sensors reference 3V3_A / AGND; keep their traces short and away from switching nodes. Give the IMU a mechanically stiff spot away from connector flex." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="120" y="680" width="920" height="110" as="geometry"/></mxCell>
+
+        <mxCell id="se_x1" value="SPI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;fontSize=10;" edge="1" parent="1" source="se_mcu" target="se_imu"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="se_x2" value="I²C / ADC" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;fontSize=10;" edge="1" parent="1" source="se_mcu" target="se_tmp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="se_x3" value="ADC" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" edge="1" parent="1" source="se_cur" target="se_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="se_x4" value="ADC" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;fontSize=10;" edge="1" parent="1" source="se_vol" target="se_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 8 : MEMORY ============ -->
+  <diagram id="memory" name="7 · Memory / Storage">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="me_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="me_title" value="7 · MEMORY / STORAGE — Flash · EEPROM · microSD" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#444444;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <object label="STM32 MCU" link="data:page/id,mcu" id="me_mcu"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=14;fontStyle=1" vertex="1" parent="1"><mxGeometry x="120" y="270" width="150" height="240" as="geometry"/></mxCell></object>
+
+        <mxCell id="me_fl" value="EXTERNAL SPI / QSPI FLASH&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;NOR, 16–128 Mbit&lt;br&gt;Firmware images (A/B slots)&lt;br&gt;Motion profiles, lookup tables&lt;br&gt;Optional XIP for large firmware&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="420" y="180" width="290" height="110" as="geometry"/></mxCell>
+        <mxCell id="me_ee" value="I²C EEPROM&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;32–256 kbit, high endurance&lt;br&gt;Serial number, board revision&lt;br&gt;Calibration constants&lt;br&gt;Runtime hours, fault counters&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="420" y="330" width="290" height="110" as="geometry"/></mxCell>
+        <mxCell id="me_sd" value="microSD CARD&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;SDMMC 4-bit (or SPI fallback)&lt;br&gt;Data logging, trace capture&lt;br&gt;Card-detect → GPIO&lt;br&gt;ESD array + series R on all lines&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EEEEEE;strokeColor=#666666;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="420" y="480" width="290" height="110" as="geometry"/></mxCell>
+
+        <mxCell id="me_use" value="&lt;b&gt;WHAT LIVES WHERE&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Internal MCU flash&lt;/b&gt; — bootloader + running application&lt;br&gt;&lt;b&gt;External flash&lt;/b&gt; — update image, large static data&lt;br&gt;&lt;b&gt;EEPROM&lt;/b&gt; — small values rewritten often; survives reflash&lt;br&gt;&lt;b&gt;microSD&lt;/b&gt; — bulk logs, removable for field diagnostics" style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="760" y="180" width="310" height="180" as="geometry"/></mxCell>
+        <mxCell id="me_note" value="&lt;b&gt;NOTES&lt;/b&gt;&lt;br&gt;&lt;br&gt;• Give flash and EEPROM their own decoupling; keep QSPI traces short and length-matched.&lt;br&gt;• Write-protect pin on flash tied to a GPIO, not hard-strapped — you'll want it during updates.&lt;br&gt;• Log writes must survive power loss: buffer in RAM, flush on a schedule, and use a journal/CRC.&lt;br&gt;• Place the SD socket on a board edge; don't route fast lines under the card cavity.&lt;br&gt;• Reserve a unique-ID scheme (MCU UID + EEPROM serial) for fleet tracking." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=11;" vertex="1" parent="1"><mxGeometry x="760" y="390" width="310" height="200" as="geometry"/></mxCell>
+
+        <mxCell id="me_x1" value="QSPI / SPI" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;fontSize=10;" edge="1" parent="1" source="me_mcu" target="me_fl"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="me_x2" value="I²C" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;fontSize=10;" edge="1" parent="1" source="me_mcu" target="me_ee"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="me_x3" value="SDMMC" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;fontSize=10;" edge="1" parent="1" source="me_mcu" target="me_sd"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 9 : USER INTERFACE ============ -->
+  <diagram id="ui" name="8 · User Interface">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="ui_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="ui_title" value="8 · USER INTERFACE — Status LEDs · Buttons · Expansion Header" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#8A3B72;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <object label="STM32 MCU" link="data:page/id,mcu" id="ui_mcu"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=14;fontStyle=1" vertex="1" parent="1"><mxGeometry x="120" y="260" width="150" height="240" as="geometry"/></mxCell></object>
+
+        <mxCell id="ui_led" value="STATUS LEDs&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;PWR (hardwired to 3V3)&lt;br&gt;RUN / heartbeat&lt;br&gt;ERROR / FAULT&lt;br&gt;CAN1 · CAN2 · ETH activity&lt;br&gt;Series resistors sized per colour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE1F5;strokeColor=#B85DA0;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="430" y="150" width="280" height="125" as="geometry"/></mxCell>
+        <mxCell id="ui_btn" value="USER BUTTONS&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;RESET (to NRST, with RC)&lt;br&gt;USER1 / USER2 → GPIO + EXTI&lt;br&gt;Pull-ups + RC debounce + ESD&lt;br&gt;Optional BOOT/DFU button&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE1F5;strokeColor=#B85DA0;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="430" y="310" width="280" height="125" as="geometry"/></mxCell>
+        <mxCell id="ui_disp" value="DISPLAY / EXPANSION HEADER&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;I²C (OLED / LCD) + SPI + UART&lt;br&gt;2–4 spare GPIO&lt;br&gt;3V3 + 5V + GND, current-limited&lt;br&gt;Keyed connector, ESD protected&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE1F5;strokeColor=#B85DA0;fontSize=12;fontStyle=1" vertex="1" parent="1"><mxGeometry x="430" y="470" width="280" height="125" as="geometry"/></mxCell>
+
+        <mxCell id="ui_note" value="&lt;b&gt;NOTES&lt;/b&gt;&lt;br&gt;&lt;br&gt;• A blinking RUN LED driven from a timer is the fastest way to know firmware is alive — never drive it from the main loop only.&lt;br&gt;• Make ERROR LED behaviour distinguishable at a glance: solid = fault latched, blink code = fault class.&lt;br&gt;• Reset button must be reachable but not accidentally pressable in a cabinet — recess or shroud it.&lt;br&gt;• The expansion header doubles as your bring-up port; keep it populated on every prototype build.&lt;br&gt;• Silkscreen every LED and button. Field diagnosis happens without the schematic in hand." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="760" y="150" width="330" height="290" as="geometry"/></mxCell>
+
+        <mxCell id="ui_x1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="ui_mcu" target="ui_led"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ui_x2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;" edge="1" parent="1" source="ui_btn" target="ui_mcu"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="ui_x3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="ui_mcu" target="ui_disp"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============ PAGE 10 : CONNECTOR MAP ============ -->
+  <diagram id="connectors" name="9 · External Connector Map">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+        <object label="◀ Back to Overview" link="data:page/id,overview" id="co_back"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=11;fontStyle=1" vertex="1" parent="1"><mxGeometry x="40" y="30" width="150" height="35" as="geometry"/></mxCell></object>
+        <mxCell id="co_title" value="9 · EXTERNAL CONNECTOR MAP — VAJRAN ↔ Robot / Industrial System" style="text;html=1;align=center;fontSize=20;fontStyle=1;fontColor=#1F2933;" vertex="1" parent="1"><mxGeometry x="220" y="28" width="880" height="40" as="geometry"/></mxCell>
+
+        <mxCell id="co_board" value="VAJRAN v1.0&lt;br&gt;CONTROLLER&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Click a connector row&lt;br&gt;to open its subsystem page&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=15;fontStyle=1" vertex="1" parent="1"><mxGeometry x="60" y="150" width="180" height="560" as="geometry"/></mxCell>
+
+        <object label="J1 · 24V DC POWER IN&lt;font style=&quot;font-size:10px&quot;&gt; — supply, 18–36V&lt;/font&gt;" link="data:page/id,power" id="co_j1"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFCC99;strokeColor=#D79B00;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="150" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J2 / J3 · CAN-FD 1 &amp; 2&lt;font style=&quot;font-size:10px&quot;&gt; — drives, joint nodes, tools&lt;/font&gt;" link="data:page/id,comm" id="co_j2"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="205" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J4 · ETHERNET RJ45&lt;font style=&quot;font-size:10px&quot;&gt; — host PC, PLC, SCADA&lt;/font&gt;" link="data:page/id,comm" id="co_j4"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="260" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J5 · RS-485&lt;font style=&quot;font-size:10px&quot;&gt; — legacy field devices, Modbus RTU&lt;/font&gt;" link="data:page/id,comm" id="co_j5"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="315" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J6 · USB-C&lt;font style=&quot;font-size:10px&quot;&gt; — service laptop: config, firmware, logs&lt;/font&gt;" link="data:page/id,comm" id="co_j6"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="370" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J7–J10 · ENCODERS 1–4&lt;font style=&quot;font-size:10px&quot;&gt; — joint / axis position feedback&lt;/font&gt;" link="data:page/id,motion" id="co_j7"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="425" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J11 · DRIVE HEADER&lt;font style=&quot;font-size:10px&quot;&gt; — PWM / DIR / ENABLE + drive faults&lt;/font&gt;" link="data:page/id,motion" id="co_j11"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="480" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J12 · DIGITAL INPUTS&lt;font style=&quot;font-size:10px&quot;&gt; — limit, home, proximity, E-stop status&lt;/font&gt;" link="data:page/id,io" id="co_j12"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="535" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J13 · DIGITAL OUTPUTS&lt;font style=&quot;font-size:10px&quot;&gt; — valves, relays, brakes, indicators&lt;/font&gt;" link="data:page/id,io" id="co_j13"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="590" width="420" height="45" as="geometry"/></mxCell></object>
+        <object label="J14 · ANALOG INPUTS&lt;font style=&quot;font-size:10px&quot;&gt; — 0–10V sensors, pressure, load cells&lt;/font&gt;" link="data:page/id,io" id="co_j14"><mxCell style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B0E3E6;strokeColor=#0E8088;fontSize=12;fontStyle=1;align=left;spacingLeft=12;" vertex="1" parent="1"><mxGeometry x="330" y="645" width="420" height="45" as="geometry"/></mxCell></object>
+
+        <mxCell id="co_robot" value="ROBOT /&lt;br&gt;INDUSTRIAL&lt;br&gt;SYSTEM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#333333;strokeColor=#000000;fontColor=#FFFFFF;fontSize=15;fontStyle=1" vertex="1" parent="1"><mxGeometry x="850" y="150" width="180" height="540" as="geometry"/></mxCell>
+
+        <mxCell id="co_note" value="&lt;b&gt;MECHANICAL / EMC CHECKLIST&lt;/b&gt;&#160; • Group connectors by domain on the panel: power | comms | motion | field I/O. &#160;• Use keyed, latching connectors — vibration will find every friction-fit part. &#160;• Shielded cables for encoders and Ethernet; shields land on chassis, not signal ground. &#160;• Every connector labelled on silkscreen and in the wiring drawing with the same designator. &#160;• Consider strain relief and a defined cable exit direction before the enclosure is finalised." style="rounded=1;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacingLeft=10;spacingTop=8;fillColor=#F8F9FA;strokeColor=#B3B3B3;fontSize=11;" vertex="1" parent="1"><mxGeometry x="60" y="720" width="970" height="80" as="geometry"/></mxCell>
+
+        <mxCell id="co_e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="co_board" target="co_j1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="co_e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="co_j1" target="co_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="co_e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="co_j7" target="co_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="co_e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="co_board" target="co_j12"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="co_e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="co_j12" target="co_robot"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+</mxfile>
